@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!--현재 강의에서는 타임리프를 html의 베이스로 삼았기 때문에 일단 이렇게 사용-->
+<body>
+<p th:text="'hello ' + ${name}">hello! empty</p>
+<!--p태그 사이의 hello! empty는 실제로 실행되지 않음
+ 먼저 th:-- 코드에서 name파라메타가 내려오면 이 코드를 출력함
+ 단지 아무 파라메타도 내려오지 않을 경우에 hello! empty가 출력?될수도..
+
+ -->
+</body>
